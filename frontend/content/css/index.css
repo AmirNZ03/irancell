@@ -1,0 +1,330 @@
+@import "custom.css";
+body{
+    background-color: var(--white-100);
+    display: flex;
+    direction: rtl;
+    flex-direction: row-reverse;
+    min-height: 100vh;
+    column-gap: 20px;
+}
+/* coding left side */
+.left-side{
+    padding:20px 0 20px 20px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+}
+.profile-box {
+    direction: rtl;
+    background-color: var(--white-50);
+    padding: 15px 20px;
+    border-radius: 25px;
+   column-gap: 20px;
+}
+.profile-wraper{
+    position: relative;
+    width: 65px;
+    height: 70px;
+    padding: 6px;
+    background-color: var(--gold-400);
+    border-radius: 50%;
+}
+.user-profile{
+    position: absolute;
+    width: 80%;
+    object-fit: cover;
+    border-radius: 50%;
+  
+    margin-right: 0.1rem;
+}
+.profile-box-desc {
+ margin-top: 2rem !important;
+}
+.user-phone,.user-name{
+    color: var(--gray-650);
+margin-top: -1rem;
+
+}
+.sim-card-charge-box{
+    background-color: var(--gold-50);
+    padding: 20px;
+    border-radius: 30px;
+    margin-top: 20px;
+    height: 100%;
+}
+.sim-card-charge-title{
+    margin-top: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.charge-progress {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(var(--gold-400) 30%, #e4ebec 0); /* درصد شارژ رو اینجا تغییر بده */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  background-color: var(--gold-50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00a3ff;
+  font-weight: bold;
+}
+
+
+.charge-btn{ 
+    background-color: var(--gold-400);
+    width: 150px;
+    border-radius: 5px;
+    color: var(--white-50);
+    font-size: 1rem;
+    box-shadow: 0 0 8px var(--gold-400);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 2rem;
+   
+}
+.service-title{
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+.active-service-box{
+    column-gap: 12px;
+    color: var(--gray-600);
+}
+.active-service-icon{
+    font-size: 1.4rem;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(253, 199, 23, 0.2);
+    border-radius: 12px;
+    color: var(--gold-400);
+}
+.active-service-box-desc{
+    line-height: 0.1px;
+}
+.download-box{
+position: relative;
+width: 90%;
+left: 0.2rem;
+margin-top: 5rem;
+top: 100%;
+transform: translateY(-610px);
+background-color: var(--white-50);
+border-radius: 15px;
+flex-direction: row-reverse;
+padding: 20px;
+}
+.download-box img{
+    width: 50px;
+    image-rendering: pixelated;
+}
+.download-box h1{
+    font-size: 1.2rem;
+}
+/* finish coding left side */
+
+/* start section center */
+.main{
+    width: 90%;
+    padding: 20px 0;
+
+}
+.main-title{
+    font-size: 1.6rem;
+  margin-right: 0.8rem;
+}
+.main-overlay{
+    position: relative;
+    isolation: isolate;
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background: url(../img/FTTX-Campaign-1680x703-CTA-FA-1415x592.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    align-items: flex-end;
+    justify-content: end;
+}
+.main-overlay::before{
+    content: "";
+    position: absolute;
+    background: linear-gradient(270deg,rgba(253,200,22,0.4),rgba(255,223,114,0.4));
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+.main-overlay h1{
+    font-size: 1.5rem;
+    margin-left: 30px;
+}
+.main-overlay button{
+    margin: 20px 0 20px 30px;
+    background-color: var(--gold-400);
+    color: var(--white-50);
+    border-radius: 3px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.chart{
+    position: relative;
+    background-color: var(--white-50);
+    border-radius: 20px;
+    margin-top: 25px;
+    padding: 30px;
+}
+.chart h1{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.3rem;
+}
+.recomend{
+    background-color: var(--white-50);
+    border-radius: 20px;
+    margin-top: 25px;
+    padding: 30px;
+}
+.recomend-title{
+    font-size: 1.3rem;
+
+}
+.recomend-table{
+    margin-top: 20px;
+    width: 100%;
+    color: var(--gray-650);
+    outline: none;
+    border-radius: 10px;
+}
+.recomend-table tr{
+    text-align: center;
+}
+.recomend-table tr:not(:first-child){
+    border-top: 3px solid var(--gray-600) !important;
+}
+.recomend-table th{
+    padding: 20px;
+}
+.recomend-table td{
+    padding: 20px;
+}
+.buy-btn{
+    border: none;
+    outline: none;
+    background-color: var(--gold-400);
+    font-size: 1rem;
+    padding: 5px 30px;
+    border-radius: 10px;
+    color: var(--white-50);
+    box-shadow: 0 0 10px var(--gold-400);
+    cursor: pointer;
+}
+
+/* finish section center */
+/* start section right */
+.sidebar{
+    background-color: var(--white-100);
+    padding: 20px 0;
+    width: 500px;
+}
+.sidebar-brand{
+    margin-bottom: 30px;
+}
+.sidebar-brand span{
+    background-color: var(--gold-400);
+    padding: 5px 20px;
+    margin-right: 10px;
+    border-radius: 30px;
+}
+.search-group {
+    width: 80%;
+    border: 2px solid var(--white-200);
+    border-radius: 12px;
+    overflow: hidden;
+}
+.search-input{
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+}
+.search-input::placeholder{
+    color: var(--white-200);
+}
+.search-input-icon{
+    margin-left: 10px;
+    transform: rotate(90deg);
+    color: var(--white-200);
+}
+.sidebar-menu{
+    width: 100%;
+    margin-top: 40px;
+    padding: 0 70px 0 0;
+}
+.sidebar-menu-item{
+    position: relative;
+    column-gap: 10px;
+    font-size: 1.2rem;
+    color: var(--gray-650);
+}
+.sidebar-menu-item:not(:first-child,:last-child){
+    margin-bottom: 18px;
+}
+.sidebar-menu-item.active{
+    color: var(--gray-700);
+}
+.sidebar-menu-item.active::before{
+    content: "";
+    position: absolute;
+    left: 30px;
+    top: -80%;
+    width: 3px;
+    height: 50px;
+    background-color: var(--gold-400);
+}
+a{
+    text-decoration: none;
+}
+
+.sidebar-menu-item.active span{
+    color: var(--gold-400);
+}
+.sidebar-menu-item-break{
+    margin: 27px 0 14px 0;
+    font-size: 0.8rem;
+    color: var(--white-200);
+}
+.space-top{
+    margin-top: 50px;
+}
+.sidebar-menu-item a{
+    color: var(--gray-650);
+}
+.sidebar-menu-item.active a{
+    color: black;
+}
+/* finish section right */
