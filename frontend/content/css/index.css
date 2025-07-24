@@ -7,7 +7,103 @@ body{
     min-height: 100vh;
     column-gap: 20px;
 }
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .left-side,
+  .main,
+  .sidebar {
+    width: 100% !important;
+    padding: 1rem;
+  }
+
+  .sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 80%;
+    z-index: 999;
+    height: 100vh;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    display: none;
+  }
+.buy-btn {
+  padding: 5px 15px; /* از 30px کمتر */
+  font-size: 0.9rem;
+}
+.main,
+.left-side,
+.sidebar {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.recomend-table td,
+.recomend-table th {
+  padding: 10px;
+  font-size: 0.9rem;
+  white-space: normal; /* اگه نوشتار طولانیه */
+}
+
+  .bars-menu {
+    display: block ;
+    position: fixed;
+    top: 1rem;
+    z-index: 1000;
+    font-size: 2rem;
+    color: black;
+    background: white;
+    border-radius: 10px;
+margin-left: 20rem !important;
+  }
+#mychart{
+    width: 100%;
+    margin-top: 3rem;
+}
+  .main-overlay {
+    height: 200px;
+    background-size: cover;
+  }
+
+  .chart,
+  .recomend {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  .recomend{
+    width: 100% !important;
+  }
+
+
+  .download-box {
+    position: relative;
+    transform: none !important;
+    margin-top: 2rem;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.left-side,
+.sidebar,
+.main {
+  width: 100%;
+  max-width: 100%;
+}
+
 /* coding left side */
+@media screen and (min-width: 1024px) {
+
+ .bars-menu{
+        display: none ;
+        opacity: 0 ;
+     }
+    }
 .left-side{
     padding:20px 0 20px 20px;
     width: 550px;

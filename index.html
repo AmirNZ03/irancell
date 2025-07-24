@@ -10,6 +10,8 @@
 </head>
 <body>
     <!-- start left side -->
+        <i class="fa-solid fa-bars bars-menu"></i>
+
 <div class="left-side lalezar-font">
     <!-- profile box -->
      <div class="profile-box flex align-items-center">
@@ -66,6 +68,7 @@
 </div>  
  <!-- finish left side -->
   <!-- start center side -->
+
 <main class="main">
     <h1 class="main-title lalezar-font">صفحه اصلی</h1>
     <section class="main-overlay flex flex-column">
@@ -83,7 +86,7 @@
     <section class="recomend">
         <h1 class="recomend-title">بسته های پیشنهادی مخصوص شما</h1>
         <table class="recomend-table">
-            <tr class="vazir-fb">
+            <tr class="vazir-fb lo">
                 <th>تاریخ انقضای بسته</th>
                 <th>نام بسته</th>
                 <th>تخفیف</th>
@@ -215,6 +218,15 @@ items.forEach((item)=>{
 
     })
 })
+let sidebar = document.querySelector(".sidebar");
+let menuBtn = document.querySelector(".bars-menu");
+if (window.matchMedia("(max-width: 768px)").matches) {
+menuBtn.addEventListener("click", () => {
+  sidebar.style.display = sidebar.style.display === "block" ? "none" : "block";
+});
+}
+
+
     </script>
     <script src="frontend/content/js/app.js"></script>
 </body>
